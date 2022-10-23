@@ -1,0 +1,3 @@
+/* eslint-disable */
+
+  "license": "MIT",//许可证 麻省理工学院MIT
