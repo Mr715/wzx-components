@@ -12,12 +12,8 @@
     "build:esm": "rollup --config build/rollup.esm.config.js",
     "build:umd": "rollup --config build/rollup.umd.config.js",
     "clean": "rimraf ./dist",
+    "prepare": "husky install",
     "prepublishOnly": "npm run lint && npm run test&& npm run build"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
   },
   "main": "dist/wzx-components.umd.js",
   "module": "dist/wzx-components.esm.js",
@@ -44,7 +40,7 @@
     "@vue/test-utils": "^2.0.0-0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
-    "husky": "^4.3.8",
+    "husky": "^8.0.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.38.5",
     "rollup-plugin-css-only": "^3.1.0",
