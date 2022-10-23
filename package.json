@@ -7,7 +7,7 @@
     "serve": "vue-cli-service serve",
     "build": "npm run clean && npm run build:esm && npm run build:umd",
     "test": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint  --max-warnings 5",
+    "lint": "vue-cli-service lint  --max-warnings 1",
     "test:watch": "vue-cli-service test:unit --watchAll",
     "build:esm": "rollup --config build/rollup.esm.config.js",
     "build:umd": "rollup --config build/rollup.umd.config.js",
@@ -19,7 +19,6 @@
       "pre-commit": "npm run lint && npm run test"
     }
   },
-
   "main": "dist/wzx-components.umd.js",
   "module": "dist/wzx-components.esm.js",
   "files": [
